@@ -4,7 +4,8 @@ public enum AudioExtension {
     MP3(".mp3"),
     WAV(".wav"),
     FLAC(".flac"),
-    OGG(".ogg");
+    OGG(".ogg"),
+    JAVA(".java");
 
     private final String extension;
 
