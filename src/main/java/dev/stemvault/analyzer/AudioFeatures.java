@@ -1,7 +1,15 @@
 package dev.stemvault.analyzer;
 
-public class AudioFeatures {
+import java.time.Instant;
 
-    // placeholder for implementation
-    public static final String[] FEATURES = { "danceability", "energy", "key" };
-}
+public record AudioFeatures(
+    String filePath, String fileHash, long fileSize,
+    int originalSampleRate, int channels, double durationSec,
+    Double bpm, String key, String scale,
+    String sampleType, String instrumentClass,
+    double rmsDb, double peakDb, double spectralCentroid,
+    double confidence, Instant analyzedAt
+) 
+{}
+
+
